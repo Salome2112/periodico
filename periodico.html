@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Somos Noticia - Periódico Escolar</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #fff;
+      color: #222;
+      line-height: 1.5;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    header {
+      border-bottom: 2px solid #222;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      flex-grow: 1;
+      line-height: 1;
+    }
+
+    .header-left small {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin-top: 5px;
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 0.9rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .header-right small {
+      display: block;
+      font-weight: 400;
+      margin-top: 2px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+
+    .main-left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    article {
+      background: #f9f9f9;
+      padding: 15px 20px;
+      border-left: 8px solid #f15a24;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    article h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-top: 0;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    article h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    article p, article ul {
+      margin-bottom: 10px;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      display: block;
+      border-radius: 4px;
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    aside .box {
+      background: #eee;
+      padding: 12px 15px;
+      border-left: 6px solid #222;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    aside .box h4 {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 15px;
+      font-size: 0.85rem;
+      color: #555;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    Somos Noticia
+    <small>Periódico “Instituto Sudamericano”<br>Elaborado por Enrique, Jhomayra</small>
+  </div>
+  <div class="header-right">
+    Junio 2024 - Junio 2025
+  </div>
+</header>
+
+<main>
+  <div class="main-left">
+
+    <!-- Proyecto Fracasado Nacional -->
+    <article>
+      <h2>Proyecto Fracasado Nacional: Educa 2024</h2>
+      <h3>Autores</h3>
+      <p>Ministerio de Educación de Ecuador en colaboración con empresa local.</p>
+      <h3>Descripción</h3>
+      <p>Proyecto para implementar una plataforma digital que gestionara matrículas, notas y comunicación en escuelas públicas. Se lanzó en septiembre 2024 con expectativas de modernizar el sistema educativo nacional.</p>
+      <h3>Motivos de fracaso</h3>
+      <ul>
+        <li>Falta de pruebas previas, causando fallas técnicas frecuentes.</li>
+        <li>Capacitación insuficiente para docentes y personal administrativo.</li>
+        <li>Infraestructura digital deficiente en zonas rurales.</li>
+        <li>Problemas de interoperabilidad con sistemas existentes.</li>
+      </ul>
+      <h3>Costos</h3>
+      <p>Aproximadamente 2 millones de dólares invertidos en desarrollo, capacitación y soporte técnico.</p>
+      <div class="image-wrapper">
+        <img src="1.jpg" alt="Sistema educativo fallido" />
+      </div>
+    </article>
+
+    <!-- Proyecto Fracasado Internacional -->
+    <article>
+      <h2>Proyecto Fracasado Internacional: LearnConnect</h2>
+      <h3>Autores</h3>
+      <p>Startup internacional con sede en EE.UU. y Europa.</p>
+      <h3>Descripción</h3>
+      <p>Plataforma lanzada en octubre 2024 para conectar estudiantes y profesores de distintas partes del mundo para intercambio académico y colaborativo.</p>
+      <h3>Motivos de fracaso</h3>
+      <ul>
+        <li>Poca adopción de usuarios debido a competencia con redes sociales ya consolidadas.</li>
+        <li>Problemas de privacidad y seguridad de datos.</li>
+        <li>Estrategias de marketing insuficientes y mala localización en mercados emergentes.</li>
+      </ul>
+      <h3>Costos</h3>
+      <p>Inversión estimada en 5 millones de dólares, con pérdidas por falta de ingresos.</p>
+      <div class="image-wrapper">
+        <img src="2.jpg" alt="Red social educativa fallida" />
+      </div>
+    </article>
+
+    <!-- Proyecto Exitoso Nacional -->
+    <article>
+      <h2>Proyecto Exitoso Nacional: App Salud Ecuador</h2>
+      <h3>Autores</h3>
+      <p>Ministerio de Salud Pública del Ecuador y equipo de desarrolladores nacionales.</p>
+      <h3>Descripción</h3>
+      <p>Aplicación móvil lanzada en enero 2025 para monitorear y brindar atención preventiva en salud pública, incluyendo agenda de vacunación y seguimiento de síntomas de enfermedades.</p>
+      <h3>Efectos</h3>
+      <ul>
+        <li>Mejora en la gestión de campañas de vacunación, aumentando cobertura en un 20%.</li>
+        <li>Reducción en tiempo de atención primaria.</li>
+        <li>Fortalecimiento de la salud preventiva en zonas urbanas y rurales.</li>
+      </ul>
+      <h3>Costos</h3>
+      <p>1.2 millones de dólares, con apoyo del Banco Mundial y fondos locales.</p>
+      <div class="image-wrapper">
+        <img src="3.jpg" alt="App de salud ecuatoriana" />
+      </div>
+    </article>
+
+    <!-- Proyecto Exitoso Internacional -->
+    <article>
+      <h2>Proyecto Exitoso Internacional: GreenTech Solutions</h2>
+      <h3>Autores</h3>
+      <p>Consorcio internacional de empresas tecnológicas y ONG ambientalistas.</p>
+      <h3>Descripción</h3>
+      <p>Lanzada en marzo 2025, esta plataforma promueve tecnologías limpias y facilita el intercambio de conocimiento para reducción de emisiones de carbono a nivel global.</p>
+      <h3>Efectos</h3>
+      <ul>
+        <li>Implementación en más de 50 países.</li>
+        <li>Reducción estimada de emisiones en 10% en sectores participantes.</li>
+        <li>Fomento a políticas públicas verdes en varios gobiernos.</li>
+      </ul>
+      <h3>Costos</h3>
+      <p>Inversión de 15 millones de dólares financiados por entidades públicas y privadas.</p>
+      <div class="image-wrapper">
+        <img src="5.jpg" alt="Tecnología verde internacional" />
+      </div>
+    </article>
+
+  </div>
+
+  <aside>
+    <div class="box">
+      <h4>Lanzamiento de Android 15</h4>
+      <p>Google lanzó Android 15 en agosto 2024, con mejoras en privacidad y nuevas funciones para desarrolladores.</p>
+    </div>
+
+    <div class="box">
+      <h4>Avances en IA Generativa</h4>
+      <p>Las herramientas de inteligencia artificial continúan transformando la educación y la industria creativa en 2025.</p>
+    </div>
+
+    <div class="box">
+      <h4>Seguridad Digital para Estudiantes</h4>
+      <p>Se recomienda usar contraseñas robustas y autenticación en dos pasos para proteger cuentas escolares y personales.</p>
+    </div>
+
+    <div class="box" style="background: #d75623; color: #fff;">
+      <h4>Robótica Educativa en Crecimiento</h4>
+      <p>Más institutos incorporan la robótica como parte de su plan curricular para fomentar habilidades STEM.</p>
+      <img src="images.jpeg" alt="Robótica educativa" style="width: 100%; border-radius: 5px; margin-top: 10px;" />
+    </div>
+  </aside>
+</main>
+
+<footer>
+  <p>Periódico “Instituto Sudamericano” - Elaborado por estudiantes</p>
+
+  <div style="text-align: left; margin-top: 30px;">
+    <h4 style="text-transform: uppercase; font-weight: 700;">Bibliografía</h4>
+    <ul style="font-size: 0.9rem; padding-left: 20px; line-height: 1.6;">
+      <li>Ministerio de Educación del Ecuador. (2024). <em>Portal institucional</em>. Recuperado de: <a href="https://educacion.gob.ec" target="_blank">https://educacion.gob.ec</a></li>
+      <li>El Telégrafo. (2024). <em>Sección Tecnología</em>. Recuperado de: <a href="https://www.eltelegrafo.com.ec/seccion/tecnologia" target="_blank">https://www.eltelegrafo.com.ec/seccion/tecnologia</a></li>
+      <li>BBC News Mundo. (2024-2025). <em>Noticias de tecnología</em>. Recuperado de: <a href="https://www.bbc.com/mundo/topics/cyx5krnw38vt" target="_blank">https://www.bbc.com/mundo/topics/cyx5krnw38vt</a></li>
+      <li>TechCrunch. (2024). <em>Startups y lanzamientos tecnológicos</em>. Recuperado de: <a href="https://techcrunch.com" target="_blank">https://techcrunch.com</a></li>
+      <li>Organización Mundial de la Salud. (2025). <em>Salud digital y apps</em>. Recuperado de: <a href="https://www.who.int" target="_blank">https://www.who.int</a></li>
+      <li>Banco Mundial. (2025). <em>Proyectos tecnológicos en América Latina</em>. Recuperado de: <a href="https://projects.worldbank.org" target="_blank">https://projects.worldbank.org</a></li>
+      <li>Forbes. (2025). <em>GreenTech y sostenibilidad</em>. Recuperado de: <a href="https://www.forbes.com/greentech" target="_blank">https://www.forbes.com/greentech</a></li>
+      <li>Android Developers Blog. (2024). <em>Lanzamiento Android 15</em>. Recuperado de: <a href="https://android-developers.googleblog.com" target="_blank">https://android-developers.googleblog.com</a></li>
+      <li>OpenAI. (2025). <em>Desarrollos en IA Generativa</em>. Recuperado de: <a href="https://openai.com/blog/chatgpt" target="_blank">https://openai.com/blog/chatgpt</a></li>
+      <li>UNESCO. (2024). <em>Educación y tecnologías emergentes</em>. Recuperado de: <a href="https://unesdoc.unesco.org" target="_blank">https://unesdoc.unesco.org</a></li>
+    </ul>
+  </div>
+</footer>
+
+<footer>
+  <p>Periódico “Instituto Sudamericano” - Elaborado por estudiantes</p>
+</footer>
+
+</body>
+</html>
